@@ -40,7 +40,8 @@ public class ScoreViewModel extends ViewModel {
     public String getHomeScorer(){
         StringBuilder result= new StringBuilder();
         for (GoalScorer g:homeGoalScorerList.getValue()){
-            result.append(g.getName()).append("")
+            result.append(g.getName())
+                    .append(" ")
                     .append(g.getMinute())
                     .append("\" ");
         }
